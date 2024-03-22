@@ -1,31 +1,35 @@
 # Uptask
 
-A brief description of what this project does and who it's for
+El backend de este proyecto es una parte fundamental de una aplicación web completa que proporciona funcionalidades de gestión de usuarios, autenticación, envío de correos electrónicos, comunicación en tiempo real a través de WebSockets y conexión con una base de datos MongoDB. Esta aplicación está diseñada para ser utilizada como un sistema de gestión de tareas, permitiendo a los usuarios registrar, organizar y completar tareas en una interfaz intuitiva y fácil de usar.
 
 ## Installation
+  
+-  Clona el repositorio desde GitHub: 
+   git clone https://github.com/Alber05/Backend-Uptask.git
+-  Instala las dependencias utilizando npm:
+   npm install
 
-Install my-project with npm
+## Configuración
+   Antes de ejecutar el backend, asegúrate de configurar las variables de entorno en un archivo .env. 
 
-bcrypt (^5.1.1):
+## Dependencias
+-  bcrypt: Una biblioteca que proporciona funciones para el cifrado seguro de contraseñas. Se utiliza comúnmente para almacenar contraseñas de usuarios de forma segura en la base de datos, utilizando algoritmos de hashing seguros como bcrypt.
 
-- Bcrypt es una biblioteca utilizada para el hash y la comparación segura de contraseñas.
-  Es comúnmente utilizado en aplicaciones web para almacenar contraseñas de forma segura, ya que realiza un hash de las contraseñas con un algoritmo de hash fuerte y utiliza salting para aumentar la seguridad.
-  ```bash
-  npm i bcrypt
-  ```
-- Dotenv es una herramienta que carga variables de entorno desde un archivo llamado .env en el entorno de desarrollo. Permite configurar fácilmente variables de entorno, como credenciales de bases de datos o configuraciones específicas de la aplicación, sin necesidad de codificarlas directamente en el código.
-  ```bash
-  npm i dotenv
-  ```
-- Express es un marco web para Node.js que simplifica el desarrollo de aplicaciones web y APIs.
-  Proporciona una serie de funciones y middleware para manejar rutas, solicitudes HTTP, vistas, entre otros.
-  Es conocido por su simplicidad y flexibilidad, permitiendo a los desarrolladores construir aplicaciones web de manera eficiente.
-  ```bash
-  npm i express
-  ```
-- Mongoose es una biblioteca de modelado de objetos para MongoDB y Node.js.
-  Facilita la interacción con bases de datos MongoDB desde una aplicación Node.js al proporcionar una capa de abstracción para trabajar con esquemas, modelos y consultas.
-  Permite definir modelos de datos con una estructura específica y proporciona métodos para realizar operaciones CRUD en la base de datos de manera sencilla.
-  ```bash
-  npm i mongoose
-  ```
+-  cors: Un middleware de Express que habilita el intercambio de recursos de origen cruzado (CORS). Esto permite que los servidores web restrinjan los recursos que pueden ser solicitados desde otro dominio fuera del dominio desde el que se sirvieron los recursos originales.
+
+-  dotenv: Un módulo que carga las variables de entorno desde un archivo .env en el entorno de Node.js. Esto facilita la gestión de configuraciones sensibles, como claves de API, URLs de bases de datos, etc., sin necesidad de exponerlas directamente en el código fuente.
+
+-  express: Un marco de aplicación web para Node.js que simplifica la creación de servidores HTTP y la gestión de rutas, middleware y solicitudes HTTP.
+
+-  jsonwebtoken: Una implementación de JSON Web Tokens (JWT) para Node.js. JWT es un estándar abierto que define una forma compacta y segura de transmitir información entre dos partes como un objeto JSON. Se utiliza comúnmente para la autenticación y autorización en aplicaciones web.
+
+-  mongodb: El controlador oficial de MongoDB para Node.js. Permite la conexión y manipulación de bases de datos MongoDB desde una aplicación Node.js. MongoDB es una base de datos NoSQL que utiliza documentos BSON (formato similar a JSON) para almacenar datos.
+
+-  mongoose: Una biblioteca de modelado de MongoDB para Node.js. Proporciona una capa de abstracción sobre el controlador de MongoDB, lo que facilita la definición de modelos de datos, esquemas y operaciones CRUD en MongoDB.
+
+-  nodemailer: Un módulo para enviar correos electrónicos desde Node.js. Permite enviar correos electrónicos de forma programática utilizando SMTP o otros servicios de correo electrónico.
+
+-  socket.io: Una biblioteca para habilitar la comunicación bidireccional en tiempo real entre clientes y servidores. Se utiliza comúnmente para construir aplicaciones web en tiempo real, como chats, juegos en línea, etc.
+
+-  whatwg-url: Una implementación de la especificación de URL del WHATWG para Node.js. Proporciona utilidades para el manejo y análisis de URL de manera consistente con la especificación URL de HTML Living Standard.
+  
